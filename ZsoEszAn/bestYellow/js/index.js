@@ -1,7 +1,7 @@
 var tableData = [];
 
 getJson(
-    "https://github.com/opendatajson/football.json/blob/master/2017-18/it.1.clubs.json",
+    "https://raw.githubusercontent.com/opendatajson/football.json/master/2017-18/it.1.clubs.json",
     function (data) {
         tableData = data.clubs;
         fillTable(tableData);
