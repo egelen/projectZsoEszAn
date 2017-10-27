@@ -7,16 +7,19 @@ getJson(
 );
 
 function fillTable(rows) {
+    var urlSearchParams = URL.searchParams;
     console.log(rows);
     var table = document.querySelector("table");
     var content = "";
     for (var i = 0; i < rows.length; i++) {
         var tr = "<tr>";
         tr += "<td>" + (i + 1) + "</td>";
-        tr += "<td>" + rows[i].key + "</td>";
-        tr += "<td>" + rows[i].name + "</td>";
+        tr += "<td>" + rows[i].team1.name + "</td>";
+        tr += "<td>" + rows[i].team2.name + "</td>";
         tr += "<td>" + rows[i].date + "</td>";
-        tr += '<td><a class="btn btn-primary" href="match.html?code=' + rows[i].code + '">match</a></td>';
+        tr += "<td>" + rows[i].team1.code + "</td>";
+        tr += "<td>" + rows[i].team2.code + "</td>";
+
         tr += "</tr>";
         content += tr;
 
