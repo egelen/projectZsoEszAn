@@ -21,12 +21,10 @@ function fillTable(rows) {
         tr += "</tr>";
         content += tr;
     }
-
     table.querySelector("tbody").innerHTML = content;
 }
 
-
-document.querySelector("#sort-btn").addEventListener("click", function () {
+document.querySelector(".sort-btn").addEventListener("click", function () {
     tableData.sort(function (a, b) {
         if (!a.code) {
             return -1;
