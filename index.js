@@ -43,7 +43,7 @@ function searchFunction() {
         document.getElementById("search").placeholder;
     var clubs = document.getElementById("tableOfClubs");
     for (i in search) {
-        if (i = clubs) {
+        if (i == document.getElementsByName) {
             return clubs;
 
         }
